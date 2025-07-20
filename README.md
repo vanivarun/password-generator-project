@@ -1,127 +1,61 @@
+# password-generator-project
 
-# 🔐 Password Generator Project
+A secure password generator with CLI & GUI (Tkinter) in Python
 
-A fully functional Python-based password generator with both **CLI** and **GUI (Tkinter)** versions.
+## Features
 
-![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?style=flat&logo=python)
-![License](https://img.shields.io/badge/license-MIT-green)
+- Command-Line Interface (CLI) support
+- Graphical User Interface (GUI) using Tkinter
+- Secure password generation
+- Customizable password length
+- Save generated passwords to a local database
+- Easy to use and portable
 
----
+## Technologies Used
 
-## 📸 Preview
+- Python
+- Tkinter (for GUI)
+- SQLite (for password storage)
+- PyInstaller (for executable build)
 
-![GUI Screenshot](screenshots/gui_preview.png) <!-- Replace this with your actual image path -->
+## Installation
 
----
+1. Clone the repository:
 
-## ✨ Features
-
-### 🔧 Common
-- Generate **strong, random passwords**
-- Customize password **length and character types**
-- Uses **clipboard integration** (`pyperclip`)
-
-### 🖥️ GUI Version
-- Built with **Tkinter**
-- **Password strength meter**
-- **Copy to clipboard** with 1-click
-- **Password history log**
-
-### 🧪 CLI Version
-- Generate secure passwords via terminal
-- Simple prompts for length and type
-
-### ⚙️ Packaging
-- Can be converted to `.exe` using PyInstaller
-
----
-
-## 🧰 Setup Instructions
-
-1. Clone the repo or download the ZIP:
-   ```bash
-   git clone https://github.com/your-username/password-generator-project.git
-   cd password-generator-project
-   ```
-
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   ```
-
-3. Activate the environment:
-   ```bash
-   venv\Scripts\activate  # For Windows
-   ```
-
-4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
----
-
-## 🚀 Usage
-
-### 🖥️ Run GUI
 ```bash
-python password_generator_gui.py
+git clone https://github.com/vanivarun/password-generator-project.git
+cd password-generator-project
 ```
 
-### 🧪 Run CLI
+2. Install required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## How to Run
+
+### CLI Version:
+
 ```bash
 python password_generator.py
 ```
 
----
-
-## 📦 Package as Executable
-
-To create a `.exe` (for Windows):
+### GUI Version:
 
 ```bash
-pip install pyinstaller
+python password_generator_gui.py
+```
+
+## Build Executable (Optional)
+
+To create a standalone executable using PyInstaller:
+
+```bash
+pyinstaller --onefile password_generator.py
 pyinstaller --onefile password_generator_gui.py
 ```
 
-The `.exe` will be available in the `dist/` folder.
+## License
 
----
-
-## 📂 Project Structure
-
-```
-password-generator-project/
-├── password_generator.py          # CLI script
-├── password_generator_gui.py      # GUI version
-├── requirements.txt
-├── README.md
-├── report.md                      # Project report
-├── cli_test_cmd.txt               # Sample CLI run
-├── venv/                          # Virtual environment (ignored)
-└── dist/, build/                  # .exe build files
-```
-
----
-
-## 🛡 License
-
-This project is licensed under the **MIT License** – feel free to use, modify, and share.
-
----
-
-## 💼 About This Project
-
-This project demonstrates:
-- Python scripting and logic
-- GUI development with Tkinter
-- Virtual environments and packaging
-- Clean code structure and documentation
-
-> 💡 A great beginner-to-intermediate level project to showcase your Python skills!
-
----
-
-## 📫 Contact
-
-Made by **Varun** – Feel free to connect!
+This project is licensed under the MIT License.
